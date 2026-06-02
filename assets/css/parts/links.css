@@ -1,5 +1,5 @@
 .link-card {
-    @apply overflow-hidden relative p-8 h-50 flex flex-row gap-2 items-center justify-center bg-white border border-gray-100 trans-all;
+    @apply overflow-hidden relative p-8 h-50 flex flex-row gap-2 items-center justify-center bg-white border border-gray-200 trans-all;
 
     span {
         @apply uppercase text-black paragraph;
@@ -10,7 +10,7 @@
     }
 
     &:after {
-        @apply -m-1 content-[url('../../assets/img/icons/arrow.svg')] leading-0 absolute p-2 border border-red/50 bottom-0 right-0 translate-x-full trans-all;
+        @apply -m-px content-[url('../../assets/img/icons/arrow.svg')] leading-0 absolute p-2 border border-red/50 bottom-0 right-0 translate-x-full trans-all;
     }
 
     &:hover {
@@ -24,5 +24,17 @@
         &:after {
             @apply translate-x-0;
         }
+    }
+}
+
+.back-link {
+    @apply flex flex-row gap-2 uppercase px-4 py-3 bg-white border border-gray-200 trans-all;
+
+    &:before {
+        @apply content-[url('../../assets/img/icons/back.svg')] leading-0;
+    }
+
+    &:hover {
+        @apply border-red/50;
     }
 }
