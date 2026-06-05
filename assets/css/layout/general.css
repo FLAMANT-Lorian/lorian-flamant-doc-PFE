@@ -18,7 +18,7 @@
             @apply grid grid-cols-1 lg:grid-cols-12 gap-8 py-10;
 
             .info {
-                @apply flex flex-col gap-2 lg:col-span-4;
+                @apply flex flex-col gap-2 lg:col-span-4 lg:sticky lg:top-12 self-start;
 
                 .title {
                     @apply text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2 lg:pb-2;
@@ -34,7 +34,7 @@
             }
 
             .links {
-                @apply flex flex-col md:grid md:grid-cols-3 gap-4 lg:col-start-6 lg:col-span-7;
+                @apply flex flex-col md:grid md:grid-cols-3 gap-6 lg:gap-8 lg:col-start-6 lg:col-span-7;
 
                 .video-card {
                     @apply relative overflow-hidden flex flex-row items-center justify-center gap-2 p-4 border border-gray-200 trans-all h-50;
@@ -57,6 +57,41 @@
 
                         .after {
                             @apply translate-x-0;
+                        }
+                    }
+                }
+
+                .img-card {
+                    @apply relative trans-all flex flex-col gap-3;
+
+                    a {
+                        @apply block overflow-hidden border border-gray-200;
+
+                        img {
+                            @apply object-contain object-center w-full h-full trans-all;
+                        }
+
+                        &:hover img {
+                            @apply scale-105;
+                        }
+                    }
+
+                    .label {
+                        @apply flex flex-row items-center justify-center gap-2;
+
+                        &:before {
+                            @apply content-[url('../../assets/img/icons/puce-small.svg')] leading-0;
+                        }
+                    }
+
+                    &:has(a:hover) {
+                        a {
+                            @apply border-red/50;
+                        }
+
+                        .label:before {
+                            @apply animate-spin;
+                            animation-duration: 3s;
                         }
                     }
                 }
