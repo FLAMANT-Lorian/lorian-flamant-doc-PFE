@@ -15,7 +15,7 @@
 
     .main {
         .step {
-            @apply grid grid-cols-1 lg:grid-cols-12 gap-8 py-10;
+            @apply grid grid-cols-1 lg:grid-cols-12 gap-8 py-12;
 
             .info {
                 @apply flex flex-col gap-2 lg:col-span-4 lg:sticky lg:top-12 self-start;
@@ -93,6 +93,46 @@
                             @apply animate-spin;
                             animation-duration: 3s;
                         }
+                    }
+                }
+            }
+        }
+
+        .text-img {
+            @apply grid grid-cols-1 lg:grid-cols-12 gap-8 py-12;
+
+            .title {
+                @apply col-span-full lg:col-start-4 lg:col-span-6 text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2 lg:pb-2;
+
+                &:before {
+                    @apply content-[url('../../assets/img/icons/puce.svg')] leading-0;
+                }
+            }
+
+            .content {
+                @apply col-span-full lg:col-start-4 lg:col-span-6;
+                h3 {
+                    @apply text-lg md:text-xl lg:text-2xl font-medium text-red flex flex-row items-center gap-2 not-first:pt-4;
+
+                    &:before {
+                        content: '';
+                        @apply inline-block w-2 h-2 bg-red rounded-full;
+                    }
+                }
+
+                p {
+                    @apply paragraph first:pt-0 py-4;
+                }
+
+                .code {
+                    @apply bg-red/25 px-2 py-px rounded-sm;
+                }
+
+                ul {
+                    @apply flex flex-col gap-4 first:pt-0 py-4 paragraph;
+
+                    li {
+
                     }
                 }
             }
