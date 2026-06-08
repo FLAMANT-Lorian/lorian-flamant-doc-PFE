@@ -5,7 +5,7 @@
         @apply col-span-full lg:col-start-3 lg:col-span-8 text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2;
 
         &:before {
-            @apply content-[url('../../assets/img/icons/puce.svg')] leading-0;
+            @apply content-[url('../../src/img/icons/puce.svg')] leading-0;
         }
     }
 
