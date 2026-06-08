@@ -1,0 +1,158 @@
+.layout {
+    @apply bg-gray-50 py-10 md:py-15 px-6 md:px-10;
+
+    .wrapper {
+        @apply max-w-500 mx-auto;
+    }
+
+    .header {
+        @apply text-center mb-10 md:mb-15;
+
+        .heading-1 {
+            @apply text-2xl md:text-3xl lg:text-4xl font-medium uppercase;
+        }
+    }
+
+    .main {
+        .step {
+            @apply grid grid-cols-1 lg:grid-cols-12 gap-8 py-12;
+
+            .info {
+                @apply flex flex-col gap-2 lg:col-span-4 lg:sticky lg:top-12 self-start;
+
+                .title {
+                    @apply text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2 lg:pb-2;
+
+                    &:before {
+                        @apply content-[url('../../src/img/icons/puce.svg')] leading-0;
+                    }
+                }
+
+                .description {
+                    @apply paragraph font-light flex flex-col gap-4;
+                }
+            }
+
+            .links {
+                @apply flex flex-col md:grid md:grid-cols-3 gap-6 lg:gap-8 lg:col-start-6 lg:col-span-7;
+
+                .video-card {
+                    @apply relative overflow-hidden flex flex-row items-center justify-center gap-2 p-4 border border-gray-200 trans-all h-50;
+
+                    &:before {
+                        @apply content-[url('../../src/img/icons/puce-small.svg')] leading-0;
+                    }
+
+                    .after {
+                        @apply -m-px absolute p-2 border border-red/50 bottom-0 right-0 translate-x-full trans-all font-normal;
+                    }
+
+                    &:hover {
+                        @apply border-red/50;
+
+                        &:before {
+                            @apply animate-spin;
+                            animation-duration: 3s;
+                        }
+
+                        .after {
+                            @apply translate-x-0;
+                        }
+                    }
+                }
+
+                .img-card {
+                    @apply relative trans-all flex flex-col gap-3;
+
+                    a {
+                        @apply block overflow-hidden border border-gray-200;
+
+                        img {
+                            @apply object-contain object-center w-full h-full trans-all;
+                        }
+
+                        &:hover img {
+                            @apply scale-105;
+                        }
+                    }
+
+                    .label {
+                        @apply flex flex-row items-center justify-center gap-2;
+
+                        &:before {
+                            @apply content-[url('../../src/img/icons/puce-small.svg')] leading-0;
+                        }
+                    }
+
+                    &:has(a:hover) {
+                        a {
+                            @apply border-red/50;
+                        }
+
+                        .label:before {
+                            @apply animate-spin;
+                            animation-duration: 3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .text-img {
+            @apply grid grid-cols-1 lg:grid-cols-12 gap-8 py-12;
+
+            .title {
+                @apply col-span-full lg:col-start-4 lg:col-span-6 text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2 lg:pb-2;
+
+                &:before {
+                    @apply content-[url('../../src/img/icons/puce.svg')] leading-0;
+                }
+            }
+
+            .content {
+                @apply col-span-full lg:col-start-4 lg:col-span-6;
+
+                h3 {
+                    @apply text-lg md:text-xl lg:text-2xl font-medium text-red flex flex-row items-center gap-2 not-first:pt-4;
+
+                    &:before {
+                        content: '';
+                        @apply inline-block w-2 h-2 bg-red rounded-full;
+                    }
+                }
+
+                p {
+                    @apply paragraph font-light first:pt-0 py-4;
+                }
+
+                .code {
+                    @apply bg-red/25 px-2 py-px rounded-sm font-normal;
+                }
+
+                ul {
+                    @apply flex flex-col gap-4 first:pt-0 py-4 paragraph;
+
+                    li {
+                        @apply font-light;
+                    }
+                }
+
+                img {
+                    @apply first:pt-0 py-4;
+                }
+            }
+        }
+    }
+
+    .footer {
+        @apply text-center mt-10 md:mt-15;
+
+        span {
+            @apply text-black;
+
+            a {
+                @apply hover:text-red trans-all;
+            }
+        }
+    }
+}

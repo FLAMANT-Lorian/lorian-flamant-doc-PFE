@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@import "./custom/fonts.css";
+@import "./custom/theme.css";
+
+@import "./utilities/animation.css";
+@import "./utilities/text.css";
+
+@import "./layout/general.css";
+@import "./layout/table.css";
+
+@import "./parts/links.css";
+

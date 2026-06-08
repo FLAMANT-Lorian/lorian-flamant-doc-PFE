@@ -7,6 +7,13 @@ export default defineConfig({
         tailwindcss(),
     ],
     build: {
+        rollupOptions: {
+          input: {
+              main: 'index.html',
+              'tests-utilisateurs': 'pages/tests-utilisateurs.html',
+              'html-quality': 'pages/qualite-code.html',
+          }
+        },
         outDir: 'docs',
     },
 })
