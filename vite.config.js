@@ -14,6 +14,5 @@ export default defineConfig({
               'html-quality': 'pages/qualite-code.html',
           }
         },
-        outDir: 'docs',
     },
 })
