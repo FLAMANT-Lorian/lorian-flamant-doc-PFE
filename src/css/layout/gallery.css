@@ -1,0 +1,19 @@
+.gallery {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4 first:mt-0;
+
+    a {
+        @apply block overflow-hidden border border-gray-200 trans-all;
+
+        img {
+            @apply object-contain object-center w-full h-full trans-all p-0!;
+        }
+
+        &:hover {
+            @apply border-red;
+
+            img {
+                @apply scale-105;
+            }
+        }
+    }
+}

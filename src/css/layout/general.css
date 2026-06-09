@@ -99,10 +99,10 @@
         }
 
         .text-img {
-            @apply grid grid-cols-1 lg:grid-cols-12 gap-8 py-12;
+            @apply grid grid-cols-1 lg:grid-cols-12 gap-4 py-12;
 
             .title {
-                @apply col-span-full lg:col-start-4 lg:col-span-6 text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2 lg:pb-2;
+                @apply col-span-full lg:col-start-3 lg:col-span-8 text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2 lg:pb-2;
 
                 &:before {
                     @apply content-[url('../../src/img/icons/puce.svg')] leading-0;
@@ -110,7 +110,7 @@
             }
 
             .content {
-                @apply col-span-full lg:col-start-4 lg:col-span-6;
+                @apply col-span-full lg:col-start-3 lg:col-span-8 flex flex-col;
 
                 h3 {
                     @apply text-lg md:text-xl lg:text-2xl font-medium text-red flex flex-row items-center gap-2 not-first:pt-4;
@@ -122,7 +122,7 @@
                 }
 
                 p {
-                    @apply paragraph font-light first:pt-0 py-4;
+                    @apply paragraph font-light first:pt-0 py-2 max-w-[80%];
                 }
 
                 .code {

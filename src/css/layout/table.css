@@ -1,43 +1,36 @@
-.table {
-    @apply grid grid-cols-1 lg:grid-cols-12 gap-8 py-12;
+table {
+    @apply col-span-full lg:col-start-3 lg:col-span-8 border border-black w-full border-collapse overflow-hidden my-4 first:mt-0;
 
-    .title {
-        @apply col-span-full lg:col-start-3 lg:col-span-8 text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2;
+    thead {
+        @apply max-md:hidden;
 
-        &:before {
-            @apply content-[url('../../src/img/icons/puce.svg')] leading-0;
+        tr {
+            @apply w-full;
+        }
+
+        th {
+            @apply uppercase font-medium px-4 py-2 text-left bg-black text-white;
         }
     }
 
-    table {
-        @apply col-span-full lg:col-start-3 lg:col-span-8 border border-black w-full border-collapse overflow-hidden;
+    tbody {
+        @apply divide-y divide-black;
 
-        thead {
-            @apply max-md:hidden;
-            tr {
-                @apply w-full;
+        tr {
+            @apply w-full max-md:flex max-md:flex-col even:bg-white;
+
+            .table-label {
+                @apply font-medium uppercase md:sr-only;
             }
 
-            th {
-                @apply uppercase font-medium px-4 py-2 text-left bg-black text-white;
+            .number {
+                @apply text-green;
             }
+
         }
 
-        tbody {
-            @apply divide-y divide-black;
-
-            tr {
-                @apply w-full max-md:flex max-md:flex-col even:bg-white;
-
-                .table-label {
-                    @apply font-medium uppercase md:sr-only;
-                }
-
-            }
-
-            td {
-                @apply px-4 py-2 md:p-4 text-left font-light max-md:flex max-md:flex-col;
-            }
+        td {
+            @apply px-4 py-2 md:p-4 text-left font-light max-md:flex max-md:flex-col;
         }
     }
 }
