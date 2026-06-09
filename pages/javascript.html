@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site de documentation technique PFE">
+    <meta name="author" content="Lorian Flamant">
+    <meta name="keywords" content="PFE, documentation, technique">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script type="module" src="../src/js/main.js"></script>
+    <title>Améliorations JavaScript et dégradation gracieuse · Site de documentation technique PFE</title>
+</head>
+<body class="layout">
+    <div class="wrapper">
+        <header class="relative header max-md:flex max-md:flex-col max-md:gap-6 max-md:items-center">
+            <a href="../index.html" class="back-link md:absolute md:top-1/2 md:-translate-y-1/2 md:left-0">
+                Retour
+            </a>
+            <h1 class="heading-1">Améliorations JavaScript et dégradation gracieuse</h1>
+        </header>
+        
+        <main class="main flex flex-col">
+            <div class="divide-y divide-dashed divide-red/50">
+                <section class="text-img">
+                    <h2 class="title">Filtre et recherche en AJAX</h2>
+                    <div class="content">
+                        <p>
+                            Afin d’améliorer l’expérience utilisateur, une fonctionnalité AJAX a été mise en place pour
+                            la barre de recherche ainsi que pour le système de filtre. Cette approche permet
+                            de mettre à jour les résultats sans recharger la page, offrant une navigation plus
+                            fluide à l’utilisateur.
+                        </p>
+                        <p>
+                            Une attention particulière a toutefois été portée à la dégradation gracieuse. Si JavaScript
+                            est désactivé, ces fonctionnalités restent utilisables grâce à un formulaire classique. Dans
+                            ce cas, une soumission du formulaire est nécessaire pour effectuer la recherche ou appliquer
+                            les filtres.
+                        </p>
+                        <p>
+                            Lorsque JavaScript est activé, l’événement de soumission du formulaire est intercepté à
+                            l’aide de <span class="code">preventDefault()</span>. Cela permet d’empêcher l’envoi
+                            classique de la requête HTTP du formulaire et d’éviter l’exécution simultanée d’une requête
+                            côté serveur et d’une requête AJAX.
+                        </p>
+                        <img alt="Code JavaSCript faisant une requête vers l’intranet pour valider les données d’un formulaire"
+                             class="max-w-[80%] mx-auto"
+                             src="../src/img/rules/7/ajax.png">
+                    </div>
+                </section>
+                <section class="text-img">
+                    <h2 class="title">Fancybox</h2>
+                    <div class="content">
+                        <p>
+                            Sur le site public, les images peuvent être affichées en grand grâce à l’utilisation de
+                            Fancybox. Pour permettre cela, chaque image est encapsulée dans une balise
+                            <span class="code">a</span> dont l’attribut <span class="code">href</span> pointe vers
+                            l’image originale.
+                        </p>
+                        <p>
+                            Cette fonctionnalité respecte également le principe de dégradation gracieuse. Si JavaScript
+                            est désactivé, le lien continue de fonctionner de manière classique et ouvre l’image
+                            directement dans le navigateur. Lorsque JavaScript est activé, Fancybox intercepte ce lien
+                            et affiche l’image dans une modale directement dans la page. L’utilisateur peut ainsi
+                            consulter les images sans quitter la page en cours, tout en conservant un comportement
+                            fonctionnel lorsque JavaScript n’est pas disponible.
+                        </p>
+                        <img alt="Code JavaScript faisant fonctionner Fancybox"
+                             class="max-w-[80%] mx-auto"
+                             src="../src/img/rules/7/fancybox.png">
+                    </div>
+                </section>
+                <section class="text-img">
+                    <h2 class="title">Calendrier</h2>
+                    <div class="content">
+                        <p>
+                            Sur la page de présentation de la salle, un calendrier permet d’indiquer à l’utilisateur les
+                            dates encore disponibles à la réservation. Celui-ci est généré à l’aide d’un package
+                            JavaScript et nécessite donc JavaScript pour être affiché. En l’absence de JavaScript, le
+                            calendrier n’est pas disponible. Même si JavaScript n'est pas présent, le site continue de
+                            fonctionner normalement.
+                        </p>
+                        <div class="gallery lg:grid-cols-2! items-center">
+                            <a aria-label="Page de présentation de la salle sans JavaScript"
+                               data-fancybox="calendar-js"
+                               href="../src/img/rules/7/calendar-without-js.png">
+                                <img alt="Page de présentation de la salle sans JavaScript"
+                                     class="max-w-[80%] mx-auto p-0!"
+                                     src="../src/img/rules/7/calendar-without-js.png">
+                                <span class="sr-only">Page de présentation de la salle sans JavaScript</span>
+                            </a>
+                            <a aria-label="Page de présentation de la salle avec JavaScript"
+                               data-fancybox="calendar-js"
+                               href="../src/img/rules/7/calendar-with-js.png">
+                                <img alt="Page de présentation de la salle avec JavaScript"
+                                     class="max-w-[80%] mx-auto p-0!"
+                                     src="../src/img/rules/7/calendar-with-js.png">
+                                <span class="sr-only">Page de présentation de la salle avec JavaScript</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="text-img">
+                    <h2 class="title">Carroussel</h2>
+                    <div class="content">
+                        <p>
+                            Sur certaines pages du site public, un carrousel est utilisé pour présenter différents
+                            actualités. Son fonctionnement est amélioré à l’aide de JavaScript afin d’offrir des
+                            contrôles de navigation et une expérience plus confortable à l’utilisateur.
+                        </p>
+                        <p>
+                            En l’absence de JavaScript, le carrousel reste accessible. L’utilisateur peut
+                            parcourir les différentes informations à l’aide du défilement horizontal natif du
+                            navigateur. Lorsque JavaScript est activé, les fonctionnalités avancées du carrousel sont
+                            ajoutées pour rendre l'expérience de l’utilisateur plus meilleure.
+                        </p>
+                        <img alt="Code JavaScript faisant fonctionner le carroussel"
+                             class="max-w-[80%] mx-auto"
+                             src="../src/img/rules/7/slider.png">
+                    </div>
+                </section>
+                <section class="text-img">
+                    <h2 class="title">Animations</h2>
+                    <div class="content">
+                        <p>
+                            Les animations du site public ont été réalisées à l’aide de la bibliothèque
+                            <strong>GSAP</strong>. Celles-ci sont entièrement construites en JavaScript et viennent
+                            ajouter du dynamisme à l’interface.
+                        </p>
+                        <p>
+                            En l’absence de JavaScript, les animations ne sont tout simplement pas jouées. Le contenu
+                            et les fonctionnalités du site restent fonctionnelles, garantissant ainsi le bon
+                            fonctionnement du site aux utilisateurs ne possédant pas JavaScript.
+                        </p>
+                        <p>
+                            Finalement, une attention particulière a été portée à l’accessibilité en prenant en compte
+                            la préférence <span class="code whitespace-nowrap">prefers-reduced-motion</span>.
+                            Lorsque cette option est activée au niveau du système d’exploitation ou du navigateur, les
+                            animations sont désactivées afin de limiter les effets de mouvement pouvant gêner
+                            l’utilisateur. Cette approche permet de garantir une expérience optimale pour tous les
+                            utilisateurs du site.
+                        </p>
+                        <img alt="Code JavaScript faisant fonctionner le carroussel"
+                             class="max-w-[80%] mx-auto"
+                             src="../src/img/rules/7/animation.png">
+                    </div>
+                </section>
+            </div>
+            <a href="../index.html" class="back-link self-center">
+                Retour
+            </a>
+        </main>
+        
+        <footer class="footer">
+            <h2 class="sr-only">Pied de page</h2>
+            <span>Réalisé par
+                <a title="Vers le site de Lorian Flamant"
+                   target="_blank"
+                   aria-label="Lorian Flamant"
+                   href="https://lorianflamant.com">
+                    Lorian Flamant
+                </a>
+            </span>
+        </footer>
+    </div>
+</body>
+</html>
