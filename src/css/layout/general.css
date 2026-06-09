@@ -24,7 +24,7 @@
                     @apply text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2 lg:pb-2;
 
                     &:before {
-                        @apply content-[url('../../src/img/icons/puce.svg')] leading-0;
+                        @apply content-[url('../img/icons/puce.svg')] leading-0;
                     }
                 }
 
@@ -40,7 +40,7 @@
                     @apply relative overflow-hidden flex flex-row items-center justify-center gap-2 p-4 border border-gray-200 trans-all h-50;
 
                     &:before {
-                        @apply content-[url('../../src/img/icons/puce-small.svg')] leading-0;
+                        @apply content-[url('../img/icons/puce-small.svg')] leading-0;
                     }
 
                     .after {
@@ -80,7 +80,7 @@
                         @apply flex flex-row items-center justify-center gap-2;
 
                         &:before {
-                            @apply content-[url('../../src/img/icons/puce-small.svg')] leading-0;
+                            @apply content-[url('../img/icons/puce-small.svg')] leading-0;
                         }
                     }
 
@@ -105,7 +105,7 @@
                 @apply col-span-full lg:col-start-3 lg:col-span-8 text-xl md:text-2xl lg:text-3xl flex flex-row items-center gap-2 lg:pb-2;
 
                 &:before {
-                    @apply content-[url('../../src/img/icons/puce.svg')] leading-0;
+                    @apply content-[url('../img/icons/puce.svg')] leading-0;
                 }
             }
 
