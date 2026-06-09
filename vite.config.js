@@ -12,6 +12,12 @@ export default defineConfig({
               main: 'index.html',
               'tests-utilisateurs': 'pages/tests-utilisateurs.html',
               'html-quality': 'pages/qualite-code.html',
+              'opquast': 'pages/opquast.html',
+              'accessibility' : 'pages/performance-et-accessibilite.html',
+              'perf-server': 'pages/performance-serveur.html',
+              'tests' : 'pages/tests.html',
+              'javaccript' : 'pages/javascript.html'
+
           }
         },
         outDir: 'dist',
