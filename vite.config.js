@@ -16,8 +16,7 @@ export default defineConfig({
               'accessibility' : 'pages/performance-et-accessibilite.html',
               'perf-server': 'pages/performance-serveur.html',
               'tests' : 'pages/tests.html',
-              'javaccript' : 'pages/javascript.html'
-
+              'javascript' : 'pages/javascript.html'
           }
         },
         outDir: 'dist',
