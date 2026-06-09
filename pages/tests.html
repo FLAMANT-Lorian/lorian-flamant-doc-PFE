@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site de documentation technique PFE">
+    <meta name="author" content="Lorian Flamant">
+    <meta name="keywords" content="PFE, documentation, technique">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script type="module" src="../src/js/main.js"></script>
+    <title>Tests automatisés · Site de documentation technique PFE</title>
+</head>
+<body class="layout">
+    <div class="wrapper">
+        <header class="relative header max-md:flex max-md:flex-col max-md:gap-6 max-md:items-center">
+            <a href="../index.html" class="back-link md:absolute md:top-1/2 md:-translate-y-1/2 md:left-0">
+                Retour
+            </a>
+            <h1 class="heading-1">Tests automatisés</h1>
+        </header>
+        
+        <main class="main flex flex-col">
+            <div class="divide-y divide-dashed divide-red/50">
+                <section class="text-img">
+                    <h2 class="title">Méthodologie d’intégration</h2>
+                    <div class="content">
+                        <p>
+                            Lors de l’intégration des différentes fonctionnalités de l’intranet, j’ai mis en place un
+                            ensemble de tests automatisés afin de vérifier le bon fonctionnement des fonctionnalités
+                            réalisés. Ces tests permettent de m’assurer que les nouvelles fonctionnalités répondent aux
+                            exigences attendues par l’intranet, et qu’elles n’introduisent pas de bugs affectant les
+                            fonctionnalités déjà existantes. J'ai réalisé au total <strong>120</strong> tests
+                            différents, incluant des tests côté serveur, mais aussi d’interfaces à l’aide du
+                            Browser testing.
+                        </p>
+                    </div>
+                </section>
+                <section class="text-img">
+                    <h2 class="title">Répartition des tests</h2>
+                    <div class="content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Nombre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="table-label">Type</span>
+                                        <span>Navigateur</span>
+                                    </td>
+                                    <td>
+                                        <span class="table-label">Nombre</span>
+                                        <span class="number">16</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="table-label">Type</span>
+                                        <span>Serveur</span>
+                                    </td>
+                                    <td>
+                                        <span class="table-label">Nombre</span>
+                                        <span class="number">104</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Total</span>
+                                    </td>
+                                    <td>
+                                        <span class="table-label">Nombre</span>
+                                        <span class="text-red">120</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+                            <img alt="Capture d'écran du terminal après le lancement des tests de type browser"
+                                 class="p-0!"
+                                 src="../src/img/rules/4/browser-tests.png">
+                            <img alt="Capture d'écran du terminal après le lancement de tous les tests"
+                                 class="p-0!"
+                                 src="../src/img/rules/4/all-tests.png">
+                        </div>
+                    </div>
+                </section>
+                <section class="step">
+                    <div class="info">
+                        <h2 class="title">Présentation des tests côté serveur</h2>
+                        <div class="description">
+                            <p>
+                                Les tests côté serveur vérifient la logique métier de l’application sans passer par
+                                l’interface utilisateur. Ils permettent notamment de contrôler les validations, les
+                                permissions, les traitements de données, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-1.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-1.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-2.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-2.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-3.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-3.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-4.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-4.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-5.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-5.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-6.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-6.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-7.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-7.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-8.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-8.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-9.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-9.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-10.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-10.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-11.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-11.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-12.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-12.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-13.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-13.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-14.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-14.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-15.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-15.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/server/server-16.png"
+                               data-fancybox="test-server"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/server/server-16.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="step">
+                    <div class="info">
+                        <h2 class="title">Présentation des tests d’interface</h2>
+                        <div class="description">
+                            <p>
+                                Les tests d’interface vérifient le bon fonctionnement de l’application du point de vue
+                                de l’utilisateur. Ils reproduisent les différentes actions réalisables dans le
+                                navigateur, telles que la connexion, la navigation, la soumission de formulaires ou
+                                encore la gestion des données.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-1.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-1.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-2.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-2.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-3.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-3.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-4.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-4.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-5.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-5.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-6.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-6.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-7.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-7.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-8.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-8.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-9.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-9.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-10.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-10.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-11.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-11.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-12.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-12.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-13.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-13.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-14.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-14.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-15.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-15.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                        
+                        <div class="img-card">
+                            <a href="../src/img/rules/4/browser/browser-16.png"
+                               data-fancybox="test-browser"
+                               aria-label="Voir l’image en grand"
+                               title="Voir l’image en grand">
+                                <img src="../src/img/rules/4/browser/browser-16.png"
+                                     alt="Capture d’écran d’un test côté serveur">
+                                <span class="sr-only">Voir l’image en grand</span>
+                            </a>
+                            <span class="sr-only">Capture d’écran d’un test côté serveur</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <a href="../index.html" class="back-link self-center">
+                Retour
+            </a>
+        </main>
+        
+        <footer class="footer">
+            <h2 class="sr-only">Pied de page</h2>
+            <span>Réalisé par
+                <a title="Vers le site de Lorian Flamant"
+                   target="_blank"
+                   aria-label="Lorian Flamant"
+                   href="https://lorianflamant.com">
+                    Lorian Flamant
+                </a>
+            </span>
+        </footer>
+    </div>
+</body>
+</html>

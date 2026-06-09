@@ -65,7 +65,7 @@
                     @apply relative trans-all flex flex-col gap-3;
 
                     a {
-                        @apply block overflow-hidden border border-gray-200;
+                        @apply block w-full h-full overflow-hidden border border-gray-200;
 
                         img {
                             @apply object-contain object-center w-full h-full trans-all;
