@@ -122,7 +122,7 @@
                 }
 
                 p {
-                    @apply paragraph font-light first:pt-0 py-2 max-w-[80%];
+                    @apply paragraph font-light first:pt-0 py-2;
                 }
 
                 .code {
