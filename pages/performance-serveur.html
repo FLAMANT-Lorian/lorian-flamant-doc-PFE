@@ -26,11 +26,11 @@
                     <div class="content">
                         <p>
                             Lorsque je récupère les réservations et que je dois ensuite charger leurs relations
-                            associées (contacts, hall_rates, booking_dates), une requête supplémentaire est exécutée
+                            associées (contacts, tarifs de la salle, dates de la réservation), une requête supplémentaire est exécutée
                             pour chaque enregistrement. Sans préchargement, 50 réservations représenteraient
-                            potentiellement 150 requêtes supplémentaires. En utilisant ma méthode <span class="code">with</span>,
+                            potentiellement 150 requêtes supplémentaires. En utilisant la méthode <span class="code">with</span>,
                             seulement 4 requêtes sont nécessaires, peu importe le nombre de réservations, ce qui est
-                            très bien pour le long terme lorsqu'il y aura des centaines de réservations à charger.
+                            très bien pour le long terme lorsqu’il y aura des centaines de réservations à charger.
                         </p>
                         <img src="/img/rules/3/booking-code.png"
                              class="lg:max-w-[60%] lg:mx-auto"
