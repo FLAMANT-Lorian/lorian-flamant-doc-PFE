@@ -624,12 +624,15 @@
                             trier dans différents dossiers.
                         </p>
                         <p>
-                            En ce qui concerne l’attribut <span class="code">srcset</span>, je ne l'ai pas utilisé dans
-                            l'intranet pour une seule raison. Peu importe la taille de l'écran, l'image ne change pas de
-                            taille et donc n’a jamais besoin d’être rechargée dans des tailles plus petites. Par contre,
-                            pour éviter d'avoir des images de trop grandes tailles, j'utilise les différentes images
-                            redimensionnées comme expliqué auparavant. Cela me permet d'avoir quand même un contrôle sur
-                            mes images sans utiliser l’attribut <span class="code">srcset</span>.
+                            En ce qui concerne l’attribut <span class="code">srcset</span>, je ne l’ai utilisé qu’une seule fois dans l’intranet.
+                            Contrairement aux autres images, celle-ci devait pouvoir s’adapter à différentes tailles
+                            d’écran. L’utilisation de plusieurs versions de l’image permet alors au navigateur de
+                            charger automatiquement la plus adaptée. Pour les autres cas, les images ne changent pas
+                            réellement de taille selon l’écran et n’ont donc pas besoin d’être rechargées dans des
+                            dimensions plus petites. Par contre, pour éviter d’avoir des images de trop grande taille,
+                            j’utilise les différentes images redimensionnées comme expliqué auparavant. Cela me permet
+                            d’avoir quand même un contrôle sur mes images tout en limitant l’utilisation de l’attribut
+                            <span class="code">srcset</span> aux situations où il apporte une réelle plus-value.
                         </p>
                         <img src="/img/rules/1/images/srcset-2.png"
                              alt="Code montrant une balise image utilisant image redimensionné côté serveur">
